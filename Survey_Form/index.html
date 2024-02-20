@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">FAVORITE APPS OF 2024</h1>
+            <p id="description">
+                This survey invites you to share your opinions about the applications you use.
+            </p>
+        </header>
+
+        <form method="post" action="#" id="survey-form">
+            <div class="grupo">
+                <!-- name -->
+                <label for="name" id="name-label">Name</label> <input type="text" required id="name" placeholder="Enter your name"> 
+            </div>
+            <div class="grupo">
+                <!-- email -->
+                <label for="email" id="email-label">Email</label> <input type="email" required id="email" placeholder="Enter your email"> 
+            </div>
+            <div class="grupo">    
+                <!-- age -->
+                <label for="number" id="number-label">Age</label>   <input type="number" required id="number" placeholder="Age" min="16" max="90">
+            </div>    
+        
+            <!-- gender -->
+            <div class="grupo">
+                <label for="dropdown"> Gender</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="woman">Woman</option>
+                        <option value="male">Male</option>
+                        <option value="non-binary">Non-binary</option>
+                        <option value="not-to-say">I'd rather not to say</option>
+                        <option value="other">Other</option>
+                    </select>    
+            </div>
+            <!-- operating system -->
+            <div class="grupo">
+                <p>What operating system do you mainly use?</p>
+                <div class="radio-grupo">
+                    <label for="system-ios" id="label-radio" class="radio-label">iOS</label><input type="radio" name="option" id="system-ios" value="option1">
+                </div>
+                <div class="radio-grupo">
+                    <label for="system-android" id="label-radio" class="radio-label">Android</label><input type="radio" name="option" id="system-android" value="option2">
+                </div>
+                <div class="radio-grupo">
+                    <label for="system-other" id="label-radio" class="radio-label">Other</label><input type="radio" name="option" id="system-other" value="option3">
+                </div>
+            </div>
+            <!-- apps -->
+            <div class="grupo">
+                <p>What are your favorite applications?</p>
+                <div class="checkbox-grupo">
+                    <label for="x" class="checkbox-label">X</label><input type="checkbox" name="x" id="x" value="x">
+                </div>
+                <div class="checkbox-grupo">
+                    <label for="youtube" class="checkbox-label">YouTube</label><input type="checkbox" name="youtube" id="youtube" value="youtube">
+                </div>
+                <div class="checkbox-grupo">
+                    <label for="reddit" class="checkbox-label">Reddit</label><input type="checkbox" name="reddit" id="reddit" value="reddit">
+                </div>
+                <div class="checkbox-grupo">
+                    <label for="tiktok" class="checkbox-label">TikTok</label><input type="checkbox" name="tiktok" id="tiktok" value="tiktok">
+                </div>
+                <div class="checkbox-grupo">
+                    <label for="whatsapp" class="checkbox-label">WhatsApp</label><input type="checkbox" name="whatsapp" id="whatsapp" value="whatsapp">
+                </div>
+                <div class="checkbox-grupo">
+                    <label for="spotify" class="checkbox-label">Spotify</label><input type="checkbox" name="spotify" id="spotify" value="spotify">
+                </div>
+                <div class="checkbox-grupo">
+                    <label for="netflix" class="checkbox-label">Netflix</label><input type="checkbox" name="netflix" id="netflix" value="netflix">
+                </div>
+                <div class="checkbox-grupo">
+                    <label for="discord" class="checkbox-label">Discord</label><input type="checkbox" name="discord" id="discord" value="discord">
+                </div>
+                <div class="checkbox-grupo">
+                    <label for="telegram" class="checkbox-label">Telegram</label><input type="checkbox" name="telegram" id="telegram" value="telegram">
+                </div>
+            </div>
+            <!-- ideas for apps -->
+            <div class="grupo">
+                <p>What app would you like to exist but don't?</p>
+                <textarea name="app-idea" id="app-idea" cols="30" rows="7" placeholder="Enter your suggestions here..." required></textarea>
+            </div>
+            <!-- submit button -->
+            <div class="grupo">
+                <button type="submit" id='submit' class="submit">Submit</button> 
+            </div>
+        </form>
+    </div>
+</body>
+</html>
